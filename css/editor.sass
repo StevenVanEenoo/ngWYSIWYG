@@ -8,18 +8,11 @@ wysiwyg-edit .tinyeditor
     overflow-x: hidden
   .sizer
     min-height: 200px
-    height: 400px
     position: relative
-  .resizer
-    background: url(../images/resize.gif) 15px 15px no-repeat
-    float: right
-    height: 32px
-    width: 32px
-    cursor: ns-resize
   .tinyeditor-header
     height: auto
     border-bottom: 1px solid #bbb
-    background: url(../images/header-bg.gif) repeat
+    background: #ECECEC
     padding-top: 1px
     select
       float: left
@@ -36,13 +29,28 @@ wysiwyg-edit .tinyeditor
         width: 1px
         height: 30px
         background: #ccc
+      .tinyeditor-control-format
+        list-style-type: none
+        float: left
+        margin: 0
+        padding: 0
+        li
+          float: left
+          height: 31px
+          line-height: 31px
+          cursor: pointer
+          border-right: 1px solid #BDBDBD
+          border-left: 1px solid #BDBDBD
+          padding: 0 5px 0 5px
+          &:hover
+            background-color: #fff
       .tinyeditor-control
         float: left
         width: 34px
         height: 30px
         cursor: pointer
         background-image: url(../images/icons.png)
-        background-position-x: 0px
+        background-position-x: 0
         &:hover
           background-color: #fff
           background-position-x: 34px
@@ -50,6 +58,7 @@ wysiwyg-edit .tinyeditor
           background-color: #D0CFCF
       float: left
       height: 31px
+      margin-right: 5%
       &:after
         clear: left
   .tinyeditor-footer
@@ -67,12 +76,6 @@ wysiwyg-edit .tinyeditor
       color: #666
       &:hover
         background-color: #fff
-  .resize
-    float: right
-    height: 32px
-    width: 32px
-    background: url(../images/resize.gif) 15px 15px no-repeat
-    cursor: s-resize
   .tinyeditor-header .tinyeditor-buttons-group .tinyeditor-control
     .colors-grid
       position: absolute

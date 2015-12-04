@@ -1,7 +1,7 @@
 {
   "name": "ngWYSIWYG",
-  "version": "0.1.0",
-  "homepage": "https://github.com/psergus/ngWYSIWYG",
+  "version": "0.1.1",
+  "homepage": "https://github.com/StevenVanEenoo/ngWYSIWYG",
   "authors": [
     "Sergey Petrenko <sergey@inkfrog.com>"
   ],
@@ -9,10 +9,7 @@
   "main": [
     "css/editor.css",
     "js/wysiwyg.js",
-    "images/header-bg.gif",
-    "images/icons.png",
-    "images/resize.gif",
-    "tpl/wysiwyg.tpl"
+    "images/icons.png"
   ],
   "keywords": [
     "angular",
@@ -40,7 +37,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.2.0",
-    "angular-sanitize": "~1.2.0"
+    "angular": "~1.4.8",
+    "angular-sanitize": "~1.4.8"
   }
 }

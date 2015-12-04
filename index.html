@@ -10,16 +10,16 @@
     <wysiwyg-edit content="content"></wysiwyg-edit>
 
     <!-- load assets -->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular-sanitize.min.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
 
     <script src="js/wysiwyg.js"></script>
     <script>
 	angular.module('myApp', ['ngWYSIWYG']).
 	controller('demoController', ['$scope', '$log', function($scope, $log) {
-	    $scope.content = '<p><strong>Hello World!</strong></p><img src="http://www.ng-newsletter.com/img/ng-newsletter-shield-logo.png">';
+	    $scope.content = 'Hello World!';
 	    $scope.$watch('content', function(newValue) {
-		$log.info(newValue);
+            $log.info(newValue);
 	    });
 	}]);
     </script>

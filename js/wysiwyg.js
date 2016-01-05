@@ -176,12 +176,15 @@
                 italic: "<div class=\"tinyeditor-control\" title=\"Italic\" style=\"background-position: 34px -150px;\" ng-class=\"{\'pressed\': cursorStyle.italic}\" ng-click=\"execCommand(\'italic\')\"></div>",
                 underline: "<div class=\"tinyeditor-control\" title=\"Underline\" style=\"background-position: 34px -180px;\" ng-class=\"{\'pressed\': cursorStyle.underline}\" ng-click=\"execCommand(\'underline\')\"></div>",
                 strikethrough: "<div class=\"tinyeditor-control\" title=\"Strikethrough\" style=\"background-position: 34px -210px;\" ng-class=\"{\'pressed\': cursorStyle.strikethrough}\" ng-click=\"execCommand(\'strikethrough\')\"></div>",
-                format: "<ul class=\"tinyeditor-control-format\"><li ng-repeat=\"s in styles\" ng-click=\"styleChange(s)\" ng-bind=\"s.name\"></li></ul>"
+                format: "<ul class=\"tinyeditor-control-format\"><li ng-repeat=\"s in styles\" ng-click=\"styleChange(s)\" ng-bind=\"s.name\"></li></ul>",
+                removeFormatting: "<div class=\"tinyeditor-control\" title=\"Remove Formatting\" style=\"background-position: 34px -720px;\" ng-click=\"execCommand(\'removeformat\')\"></div>",
+                undo: "<div class=\"tinyeditor-control\" title=\"Undo\" style=\"background-position: 34px -540px;\" ng-click=\"execCommand(\'undo\')\"></div>"
             };
 
             scope.toolbar = [
                 { name: 'basicStyling', items: ['bold', 'italic', 'underline', 'strikethrough'] },
-                { name: 'styling', items: ['format'] }
+                { name: 'styling', items: ['format'] },
+                { name: 'doers', items: ['removeFormatting', 'undo'] },
             ];
 
             //compile the template

@@ -229,7 +229,7 @@
             scope.fontsizes = [{key: 1, name: 'x-small'}, {key: 2, name: 'small'}, {key: 3, name: 'normal'}, {key: 4, name: 'large'}, {key: 5, name: 'x-large'}, {key: 6, name: 'xx-large'}, {key: 7, name: 'xxx-large'}];
             scope.mapFontSize = { 10: 1, 13: 2, 16: 3, 18: 4, 24: 5, 32: 6, 48: 7};
 
-            scope.styles = [{name: 'H1', key: '<h1>'}, {name: 'H2', key: '<h2>'}, {name: 'H3', key: '<h3>'}];
+            scope.styles = [{name: 'H1', key: '<h1>'}, {name: 'H2', key: '<h2>'}, {name: 'H3', key: '<h3>'},  {name: 'P', key: '<p>'}];
             scope.styleChange = function(s) {
                 scope.execCommand('formatblock', s.key );
             };
